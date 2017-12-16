@@ -1,0 +1,529 @@
+/*GLOBAL*/
+
+Body {
+    font-family: helvetica, verdana;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p,
+.linkborder {
+    font-size: 1.2em;
+}
+
+.headerlogo {
+    text-align: center;
+}
+
+/*HEADER*/
+
+.headerimg {
+    display: block;
+    margin: auto;
+    width: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/*NAVIGATION*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav ul li {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+
+.navitem {
+    flex-grow: 1;
+}
+
+
+.wrapper {
+    margin-left: ;
+    margin-right: ;
+}
+
+#case1,
+#case2,
+#case3,
+#tuborg,
+#beefeater {
+    border-bottom-style: solid;
+}
+
+/*INDHOLD PÅ FORSIDE*/
+
+.text {
+    text-align: center;
+}
+
+/*UNDERSIDER*/
+
+.undersidecontainer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.undersidebilleder {
+    width: 60%;
+    margin-left: 19%;
+    margin-bottom: 6%;
+    margin-top: 3%;
+}
+
+article {
+    margin-bottom: 5%;
+}
+
+/*----- 
+
+Resposive sizes: Sæt sizing ind til de forskellige størrelser.
+
+-----*/
+
+/*mobil*/
+
+@media (max-width: 767px) {
+    /*FORSIDE*/
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .forsidebillede {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: -2px;
+        margin-top: -2px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        background-color: black;
+    }
+
+    .text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    /*UNDERSIDER*/
+    p,
+    .p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /*CASE 1*/
+    .godsbanenmockup {
+        width: 80%;
+        margin-left: 8%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .godsbanenkalender {
+        width: 80%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+
+    /*CASE 2*/
+    .kaffeskitse {
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffelogo {
+        width: 30%;
+        margin-left: 33%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffeboenne {
+        width: 15%;
+        margin-left: 40%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffemockup {
+        width: 70%;
+        margin-left: 10%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffeside {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*LØVES*/
+    .loevesmenu {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*TUBORG*/
+    .tuborgskitse {
+        width: 90%;
+        margin-left: 3%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .tuborgbilleder {
+        width: 90%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    /*BEEFEATER*/
+    .beefeaterbillede {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .beefeaterskitse {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+}
+
+/*tablet*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /*FORSIDE*/
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .forsidebillede {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: -2px;
+        margin-top: -2px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        background-color: black;
+    }
+
+    .text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+    }
+    /*UNDERSIDER*/
+    p,
+    .p {
+        column-count: 2;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*CASE 1*/
+    .godsbanenmockup {
+        width: 40%;
+        margin-left: 30%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .godsbanenkalender {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*CASE 2*/
+    .kaffelogo {
+        width: 10%;
+        margin-left: 30%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    .kaffeboenne {
+        width: 5%;
+        margin-left: 20%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffeskitse {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffemockup {
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    .kaffeside {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*LØVES*/
+    .loevesmenu {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*TUBORG*/
+    .tuborgskitse {
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .tuborgbilleder {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*BEEFEATER*/
+    .beefeaterbillede {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .beefeaterskitse {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+}
+
+/*desktop*/
+
+@media (min-width: 1024px) {
+    /*NAVIGATION*/
+    .headerimg {
+        width: 10%;
+    }
+
+    .navitem {
+        transition: ;
+    }
+
+    .navitem:hover {
+        transform: scale(1.2);
+        transition: .5s;
+    }
+
+    /*FORSIDE*/
+    /*HOVER EFFEKT SNIPPET MED UDGANGSPUNKT I
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .forsidebillede {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: -2px;
+        margin-top: -2px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .4s;
+        background-color: black;
+    }
+
+    .container:hover .overlay {
+        opacity: 0.7;
+    }
+
+    .text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    /*UNDERSIDER*/
+    p {
+        column-count: 2;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    /*CASE 1*/
+    .godsbanenmockup {
+        width: 40%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+        margin-left: 30%;
+    }
+
+    .godsbanenkalender {
+        width: 40%;
+        margin-left: 30%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*CASE 2*/
+    .kaffelogo {
+        width: 10%;
+        margin-left: 30%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    .kaffeboenne {
+        width: 5%;
+        margin-left: 20%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffeskitse {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffemockup {
+        width: 85%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .kaffeside {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*LØVES*/
+    .loevesmenu {
+        width: 50%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+        margin-left: 20%;
+
+    }
+
+
+    /*TUBORG*/
+    .tuborgskitse {
+        width: 60%;
+        margin-left: 19%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .tuborgbilleder {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    /*BEEFEATER*/
+    .beefeaterskitse {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    .beefeaterbillede {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+    }
+
+    */
